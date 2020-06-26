@@ -15,7 +15,7 @@ describe("User can view a list of TV shows", () => {
 
   it("showns an image inside the header", () => {
     cy.get("#header").within(() => {
-      cy.get("#logo").find("img").should("be.visible");
+      cy.get("#logo").find("img#logo").should("be.visible");
     });
   });
   it("shows tv shows images", () => {
